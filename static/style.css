@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+
+    /* Фон в стиле калмыцкой степи */
+    background:
+        linear-gradient(rgba(120, 85, 45, 0.25),
+                        rgba(120, 85, 45, 0.25)),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7")
+        center / cover fixed;
+
+    color: #3b2118;
+}
+
+/* Верхняя часть сайта */
+
+header {
+    background-color: #8b211c;
+    color: #fff4d6;
+
+    width: 90%;
+    margin: 0 auto;
+
+    padding: 20px;
+
+    border-radius: 0 0 10px 10px;
+
+    text-align: center;
+
+    border-bottom: 4px solid #d6a73c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 8px 0;
+}
+
+/* Меню */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff4d6;
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd45c;
+}
+
+/* Основной блок */
+
+main {
+    width: 85%;
+    max-width: 1100px;
+
+    margin: 25px auto;
+
+    padding: 35px;
+
+    background-color: rgba(255, 250, 235, 0.96);
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовки */
+
+h2 {
+    color: #8b211c;
+}
+
+h3 {
+    color: #8b211c;
+}
+
+/* Главная страница */
+
+.hero {
+    text-align: center;
+
+    padding: 25px;
+
+    border-bottom: 2px solid #d6a73c;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Карточки блюд */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background-color: #fffaf0;
+
+    border: 1px solid #d6a73c;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 23px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* Ссылки */
+
+a {
+    color: #8b211c;
+}
+
+a:hover {
+    color: #c28b20;
+}
+
+/* Кнопки */
+
+.button {
+    display: inline-block;
+
+    background-color: #8b211c;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #641512;
+
+    color: #ffd45c;
+}
+
+/* Страница отдельного блюда */
+
+.dish-page {
+    text-align: center;
+
+    padding: 30px;
+}
+
+.dish-page p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+/* Форма */
+
+.form-container {
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #c9a45c;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    background-color: #8b211c;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #641512;
+}
+
+/* Подвал */
+
+footer {
+    width: 90%;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: #8b211c;
+
+    border-top: 3px solid #d6a73c;
+}
+
+/* Для телефона */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+        padding: 20px;
+    }
+
+    header {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Калмыцкие блюда</h2>
+
+{% for dish in dishes %}
+
+<h3>
+    {{ dish.name }}
+</h3>
+
+<p>
+    {{ dish.description }}
+</p>
+
+<a href="/dish/{{ dish.id }}">
+    Подробнее
+</a>
+
+<hr>
+
+{% endfor %}
+
+{% endblock %}

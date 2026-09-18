@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Добавить блюдо</h2>
+
+<form method="POST">
+
+    <p>
+        Название:
+    </p>
+
+    <input type="text" name="name">
+
+    <p>
+        Описание:
+    </p>
+
+    <textarea name="description"></textarea>
+
+    <br><br>
+
+    <button type="submit">
+        Добавить
+    </button>
+
+</form>
+
+{% endblock %}
